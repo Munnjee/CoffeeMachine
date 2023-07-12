@@ -107,7 +107,7 @@ while machine_on:
 
     if machine_on:
         input("Press Enter to continue...\n")
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 print(closed)
 print("Machine turned off. Good bye!")
